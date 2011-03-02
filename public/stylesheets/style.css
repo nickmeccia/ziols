@@ -1,0 +1,123 @@
+/**
+* CSS
+* 
+* @version 1.0
+* @author Nick Meccia
+*
+*/
+
+a:link { color: #41d5f1; text-decoration:none; }
+a:active { color: #41d5f1; text-decoration:none; }
+a:visited { color: #41d5f1; text-decoration:none; }
+a:hover { color: #41d5f1; text-decoration:none; }
+
+body {
+	font-size: 11px;
+	font-color: #262626;
+	font-family: helvetica, arial;
+	background: #f8f8f8;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#header {
+	
+}
+
+#links {
+	text-align: center;
+}
+
+#yield {
+	width: 795px;
+	float:left;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #262626;
+}
+
+#sidebar {
+	width: 198px;
+	float:right;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #262626;
+	background-image: url('/images/sidebar.jpg');
+}
+
+#text_box {
+	
+}
+
+#footer {
+	width:1000px;
+	float:clear;
+	padding-top: 3px;
+}
+
+img.center {
+	display: block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15px;
+}
+
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body.section-1 { }
+body.section-2 { }
+body.section-3 { }
+
+a img { border: none; }
+
+p { margin: 0 0 9px 0; }
+
+h1 { font-size: 32px; }
+h2 { font-size: 24px; }
+h3 { font-size: 16px; }
+h4 { font-size: 12px; }
+
+
+#menu {
+    width: 150px;
+    overflow: auto;
+    top: 0;
+    bottom: 0;
+	left: 50px;
+    position: fixed;
+    height: 450px;
+	background-color: #f7941d;
+	font-size: 10px;
+}
+
+#menu ul {
+	list-style: none;
+	margin: 0 0 12px 0;
+}
+
+#menu ul li.section-title { }
+
+#content {
+    height: 100%;
+    margin: 0 0 0 250px;
+    top: 0;
+}
+
+.container {
+    padding: 5px 5px 25px 5px;
+}
+
+#content p { width: 400px; margin-bottom: 9px; }
+
+
+#img-container	{ margin: 0; padding: 0; }
+#img-container p	{ width: 400px; margin: 0; padding: 0 0 12px 0; }
+
+#once { clear: left; }
