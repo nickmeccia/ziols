@@ -9,6 +9,7 @@ gem 'sqlite3'
 
 # Use unicorn as the web server
 # gem 'unicorn'
+gem 'heroku'
 
 # Deploy with Capistrano
 # gem 'capistrano'
