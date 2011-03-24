@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ziols' Smiles</title>
+  <title>ziols' smiles</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
@@ -9,37 +9,48 @@
 
 <body>
 	<div id="header">
-	  	<%= link_to image_tag("header_1.jpg"), root_url %>
-
-
+		<% @header ||= "about" %>
+	  	<%= render :partial => "home/#{@header}" %>
 	</div>
 	
-	<div id="links">
-		<%= link_to "Contact Us", contact_us_url, :class => "whatever", :id => "thisistheid" %>		
-		<%= image_tag "hashes.jpg" %>
+	<div id="container">
+		<div id="links">
+			<ul class="nav-hor">
+			<li><%= link_to "home", root_path, :class => "custom_font" %></li>
+			<li><%= link_to "about", about_path, :class => "custom_font" %></li>
+			<li><%= link_to "patient resources", patient_resources_path, :class => "custom_font" %></li>
+			<li><%= link_to "financial options", financial_options_path, :class => "custom_font" %></li>
+			<li><%= link_to "contact", contact_path, :class => "custom_font" %></li>
+			<li><%= link_to "faq", faq_path, :class => "custom_font" %></li>
+			<li><%= link_to "links", links_path, :class => "custom_font" %></li>
+			</ul>
+			<br/>	
+		</div>
+
+		<div id="yield">
+			<%= yield %><br/>
+		</div>
+
+		<div id="sidebar">
+			<div id="text_box">
+				<p class="head_blue">phone:</p>
+				773 763 7755
+				<p class="head_blue">hours:</p>
+				m-f: 10-6<br/>
+				s&s: 8-1
+				<p class="head_blue">address:</p>
+				5399 n milwaukee ave<br/>
+				chicago, il 60630				
+			</div>
+			
+			<%= image_tag "map.jpg", :class => "center" %>
+
+<!--	<%= link_to image_tag("map.jpg"), 'http://maps.google.com/maps?oe=utf-8&um=1&ie=UTF-8&q=gordon+j+ziols&fb=1&gl=us&hq=gordon+j+ziols&cid=0, 0, 2998087269099188908&ei=o65lTZnbGNGWtwe44JGWBg&sa=X&oi=local__result&ct=image&resnum=4&ved=0CDIQnwIwAw', {:target => "_new", :class => "center"}%>
+-->
+			<%= image_tag "ad.jpg", :class => "center" %>
+			<br/><br/>
+		</div>
 	</div>
-
-
-	<!--so, apparently "yield" is the current page-->
-	<div id="yield">
-		<%= yield %><br/>
-	</div>
-
-
-	<div id="sidebar">
-		<br/>
-		<%= image_tag "text_box.jpg", :class => "center" %>
-		<%= link_to image_tag("map.jpg"), 'http://maps.google.com/maps?oe=utf-8&um=1&ie=UTF-8&q=gordon+j+ziols&fb=1&gl=us&hq=gordon+j+ziols&cid=0, 0, 2998087269099188908&ei=o65lTZnbGNGWtwe44JGWBg&sa=X&oi=local__result&ct=image&resnum=4&ved=0CDIQnwIwAw', {:target => "_new", :class => "center"}%>
-		<%= image_tag "ad.jpg", :class => "center" %>
-		<br/><br/>
-	</div>
-
-	
-	<div id="footer">
-		<%= image_tag "hashes.jpg" %>
-
-	</div>
-	
 	
 </body>
 </html>

@@ -9,8 +9,15 @@ Ziols::Application.routes.draw do
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
-  match "contact_us" => "home#contact_us"
-
+  match "index" => "home#index"
+  match "about" => "home#about"
+  match "patient_resources" => "home#patient_resources"
+  match "financial_options" => "home#financial_options"
+  match "contact" => "home#contact"
+  match "faq" => "home#faq"
+  match "links" => "home#links"
+  match "send_email" => "email#send_it"
+  
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
@@ -25,7 +32,7 @@ Ziols::Application.routes.draw do
   #       get 'sold'
   #     end
   #   end
-
+  
   # Sample resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
