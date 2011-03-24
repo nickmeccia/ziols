@@ -8,6 +8,7 @@
 </head>
 
 <body>
+<div id="wrap">
 	<div id="header">
 		<% @header ||= "about" %>
 	  	<%= render :partial => "home/#{@header}" %>
@@ -18,13 +19,12 @@
 			<ul class="nav-hor">
 			<li><%= link_to "home", root_path, :class => "custom_font" %></li>
 			<li><%= link_to "about", about_path, :class => "custom_font" %></li>
+			<li><%= link_to "new patients", new_patients_path, :class => "custom_font" %></li>
 			<li><%= link_to "patient resources", patient_resources_path, :class => "custom_font" %></li>
-			<li><%= link_to "financial options", financial_options_path, :class => "custom_font" %></li>
 			<li><%= link_to "contact", contact_path, :class => "custom_font" %></li>
 			<li><%= link_to "faq", faq_path, :class => "custom_font" %></li>
 			<li><%= link_to "links", links_path, :class => "custom_font" %></li>
 			</ul>
-			<br/>	
 		</div>
 
 		<div id="yield">
@@ -40,17 +40,16 @@
 				s&s: 8-1
 				<p class="head_blue">address:</p>
 				5399 n milwaukee ave<br/>
-				chicago, il 60630				
+				chicago, il 60630
+				<br/>			
 			</div>
-			
-			<%= image_tag "map.jpg", :class => "center" %>
-
-<!--	<%= link_to image_tag("map.jpg"), 'http://maps.google.com/maps?oe=utf-8&um=1&ie=UTF-8&q=gordon+j+ziols&fb=1&gl=us&hq=gordon+j+ziols&cid=0, 0, 2998087269099188908&ei=o65lTZnbGNGWtwe44JGWBg&sa=X&oi=local__result&ct=image&resnum=4&ved=0CDIQnwIwAw', {:target => "_new", :class => "center"}%>
--->
+			<br/>
+			<%= link_to image_tag("map.jpg"), 'http://maps.google.com/maps?oe=utf-8&um=1&ie=UTF-8&q=gordon+j+ziols&fb=1&gl=us&hq=gordon+j+ziols&cid=0,%200,%202998087269099188908&ei=o65lTZnbGNGWtwe44JGWBg&sa=X&oi=local__result&ct=image&resnum=4&ved=0CDIQnwIwAw', {:target => "_new", :class => "center"}%>
 			<%= image_tag "ad.jpg", :class => "center" %>
 			<br/><br/>
-		</div>
-	</div>
+		</div> <!-- end sidebar -->
+	</div> <!-- end container -->
+</div> <!-- end wrap -->
 	
 </body>
 </html>

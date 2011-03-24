@@ -1,27 +1,40 @@
 <p class="head_1">contact</p>
-<p>Should you have an emergency, please call our offices. If the emergency is during non-business hours, please call Dr. Ziols at (847) 951-6166. Please feel free to email us at drziols@comcast.net for items of a non emergency nature, or use the form below.</p>
+<p>Should you have an emergency, please call our offices. If the emergency is during non-business hours, please call Dr. Ziols at 847.951.6166. Please feel free to email us at <%= link_to 'drziols@comcast.net' %> for items of a non emergency nature, or use the form below.</p>
 <p>All fields are optional.</p>
-<%= form_tag send_email_path do %>
-	<%= label "email", "name" %>
-	<%= text_field "email", "name" %><br/>
-	<%= label "email", "email" %>
-	<%= text_field "email", "email" %><br/>
-	<%= label "email", "address" %>
-	<%= text_field "email", "address" %><br/>
-	<%= label "email", "city" %>
-	<%= text_field "email", "city" %><br/>
-	<%= label "email", "state" %>
-	<%= text_field "email", "state" %><br/>
-	<%= label "email", "zip" %>
-	<%= text_field "email", "zip" %><br/>
-	<%= label "email", "phone" %>
-	<%= text_field "email", "phone" %><br/>
-	<%= label "email", "best time to call" %>
-	<%= text_field "email", "call_time" %><br/>
-	<%= label "email", "preferred appointment time" %>
-	<%= text_field "email", "appointment_time" %><br/>
-	<%= label "email", "additional comments" %>
-	<%= text_field "email", "comments" %><br/>
-
-	<%= submit_tag "Send" %>
+<%= form_tag send_email_path, {:class => "send_email_form"} do %>
+	<fieldset>
+		<%= label "email", "name" %>
+		<%= text_field "email", "name" %><br/>
+	</fieldset>
+	<fieldset>
+		<%= label "email", "email" %>
+		<%= text_field "email", "email" %><br/>
+	</fieldset>
+	<fieldset>
+		<%= label "email", "city" %>
+		<%= text_field "email", "city" %><br/>
+	</fieldset>
+	<fieldset>
+		<%= label "email", "zip" %>
+		<%= text_field "email", "zip" %><br/>
+	</fieldset>
+	<fieldset>
+		<%= label "email", "phone" %>
+		<%= text_field "email", "phone" %><br/>
+	</fieldset>
+	<fieldset>
+		<%= label "email", "best time to call" %>
+		<%= text_field "email", "call_time" %><br/>
+	</fieldset>
+	<fieldset>
+		<%= label "email", "preferred appointment time" %>
+		<%= text_field "email", "appointment_time" %><br/>
+	</fieldset>
+	<fieldset>
+		<%= label "email", "additional comments" %>
+		<%= text_area "email", "comments" %><br/>
+	</fieldset>
+	<fieldset>
+		<%= submit_tag "Send" %>
+	</fieldset>
 <%- end -%>

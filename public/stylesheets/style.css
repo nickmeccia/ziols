@@ -26,7 +26,7 @@ p.head_blue {
 	color: #44c1cf;
 	font-size: 17px;
 	font-family: myFont;
-	line-height: 1px;
+	line-height: 0px;
 }
 
 img {
@@ -37,6 +37,11 @@ a:link, a:active, a:visited, a:hover { color: #44c1cf; text-decoration:none; }
 a.custom_font {
 	font-size: 20px;
 	font-family: myFont;
+}
+
+wrap {
+	width: 1000px;
+	background: #ffffff;
 }
 
 body {
@@ -108,4 +113,29 @@ img.center {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 15px;
+}
+
+form.send_email_form fieldset {
+	border-style: none;
+	margin-left: 60px;
+}
+form.send_email_form fieldset textarea {
+	width: 275px;
+	height: 100px;
+}
+
+form.send_email_form fieldset input[type=text] {
+	width: 275px;
+}
+
+form.send_email_form fieldset input[type=submit] {
+ 	margin-left: 162px;
+}
+
+form.send_email_form label {
+	width: 150px;
+	padding-right: 5px;
+	display: inline-block;
+	text-align: right;
+	vertical-align: top;
 }

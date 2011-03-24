@@ -12,7 +12,7 @@ Ziols::Application.routes.draw do
   match "index" => "home#index"
   match "about" => "home#about"
   match "patient_resources" => "home#patient_resources"
-  match "financial_options" => "home#financial_options"
+  match "new_patients" => "home#new_patients"
   match "contact" => "home#contact"
   match "faq" => "home#faq"
   match "links" => "home#links"

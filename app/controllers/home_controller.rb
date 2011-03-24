@@ -16,8 +16,8 @@ def faq
   @header = "faq"
 end
 
-def financial_options
-  @header = "financial_options"
+def new_patients
+  @header = "new_patients"
 end
 
 def links
