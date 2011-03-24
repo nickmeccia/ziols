@@ -1,5 +1,5 @@
 class ZiolsMailer < ActionMailer::Base
-  default :from => "ziols@gmail.com"
+  default :from => "gordonjziols@gmail.com"
   
   def contact_us
     mail(:to => "nickmeccia@gmail.com",
