@@ -124,7 +124,7 @@ body {
 	display: block;
 	clear: both;
 	border-top: 1px solid #696969;
-	padding-top: 20px;
+	padding-top: 0px;
 	padding-bottom: 30px;
 	text-align: center;
 }
@@ -168,4 +168,13 @@ form.send_email_form label {
 	display: inline-block;
 	text-align: right;
 	vertical-align: top;
+}
+
+.toggle {
+	color: #44c1cf;
+	font-size: 17px;
+	font-family: myFont;
+}
+
+.showable {
 }
