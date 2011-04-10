@@ -33,10 +33,15 @@
 
 		<div id="sidebar">
 			<div id="text_box">
-				<p class="head_blue">phone:</p>
-				773 763 7755
+				<div id="dashes">
+					<p class="head_3">your smile is our priority!</p>
+				</div>
+				<p class="head_blue">contact:</p>
+				773 763 1000<br/>
+				<%= link_to "drziols@gmail.com" %></p>
 				<p class="head_blue">hours:</p>
-				m-f: 10-6<br/>
+				m,f: 8-5<br/>
+				t,r: 10-7<br/>
 				s&s: 8-1
 				<p class="head_blue">address:</p>
 				5399 n milwaukee ave<br/>
@@ -44,10 +49,16 @@
 				<br/>			
 			</div>
 			<br/>
-			<%= link_to image_tag("map.jpg"), 'http://maps.google.com/maps?oe=utf-8&um=1&ie=UTF-8&q=gordon+j+ziols&fb=1&gl=us&hq=gordon+j+ziols&cid=0,%200,%202998087269099188908&ei=o65lTZnbGNGWtwe44JGWBg&sa=X&oi=local__result&ct=image&resnum=4&ved=0CDIQnwIwAw', {:target => "_new", :class => "center"}%>
+			<%= link_to image_tag("map.jpg"), 'http://maps.google.com/maps?um=1&ie=UTF-8&q=dr+gordon+j+ziols&fb=1&gl=us&hq=dr+gordon+j+ziols&hnear=Park+Ridge,+IL&cid=0,0,2998087269099188908&ei=s3ObTe6SNov2tgPdo42dBA&sa=X&oi=local_result&ct=image&resnum=4&ved=0CDMQnwIwAw', {:target => "_new", :class => "center"}%>
 			<%= image_tag "ad.jpg", :class => "center" %>
 			<br/><br/>
 		</div> <!-- end sidebar -->
+		
+		<div id="footer">
+			<p class="head_4">
+			design & code courtesy of <%= link_to 'http://nickmeccia.com', {:target => "_new"}%> </p>
+			<%= link_to image_tag("3.jpg"), 'http://nickmeccia.com', {:target => "_new"}%>
+		</div> <!-- end footer -->
 	</div> <!-- end container -->
 </div> <!-- end wrap -->
 	

@@ -19,7 +19,21 @@ p.head_1 {
 p.head_2 {
 	font-size: 21px;
 	font-family: myFont;
-	/***italicize**/
+	/***italicize?**/
+}
+
+p.head_3 {
+	color: #44c1cf;
+	font-size: 21px;
+	font-family: myFont;
+	padding-bottom:10px;
+	border-bottom: 1px dashed #696969;
+}
+
+p.head_4 {
+	font-size:14px;
+	font-family: myFont;
+	margin-bottom: 5px;
 }
 
 p.head_blue {
@@ -39,7 +53,8 @@ a.custom_font {
 	font-family: myFont;
 }
 
-wrap {
+
+#wrap {
 	width: 1000px;
 	background: #ffffff;
 }
@@ -48,8 +63,8 @@ body {
 	font-size: 12px;
 	font-color: #262626;
 	font-family: helvetica, arial;
-	line-height: 18px;
-	background: #ffffff;
+	line-height: 24px;
+	background-image: url('/images/tile.jpg');
 	width: 1000px;
 	margin: 0 auto;
 }
@@ -103,6 +118,17 @@ body {
 	padding-left: 20px;
 }
 
+
+#footer {
+	width: 800px;
+	display: block;
+	clear: both;
+	border-top: 1px solid #696969;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
 #text_box {
 	line-height: 15px;
 }
@@ -122,14 +148,18 @@ form.send_email_form fieldset {
 form.send_email_form fieldset textarea {
 	width: 275px;
 	height: 100px;
+	border: 1px solid #44c1cf;
 }
 
 form.send_email_form fieldset input[type=text] {
 	width: 275px;
+	border: 1px solid #44c1cf;
 }
 
 form.send_email_form fieldset input[type=submit] {
  	margin-left: 162px;
+	border: 1px solid #44c1cf;
+	background-color: #ffffff;
 }
 
 form.send_email_form label {
