@@ -11,12 +11,13 @@ Ziols::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
   match "index" => "home#index"
   match "about" => "home#about"
-  match "patient_resources" => "home#patient_resources"
+  match "services" => "home#services"
   match "new_patients" => "home#new_patients"
   match "contact" => "home#contact"
   match "faq" => "home#faq"
   match "links" => "home#links"
   match "send_email" => "email#send_it"
+  match "google_directions" => "maps#find_it"
   
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products

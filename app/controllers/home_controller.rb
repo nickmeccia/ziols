@@ -24,8 +24,8 @@ def links
   @header = "links"
 end
 
-def patient_resources
-  @header = "patient_resources"
+def services
+  @header = "services"
 end
 
 end

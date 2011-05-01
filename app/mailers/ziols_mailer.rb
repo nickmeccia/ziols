@@ -3,6 +3,6 @@ class ZiolsMailer < ActionMailer::Base
   
   def contact_us(email)
     @email = email
-    mail({:to => "nickmeccia@gmail.com", :subject => "Mail from #{email[:name]}"})
+    mail({:to => "gordonjziols@gmail.com", :subject => "Mail from #{email[:name]}"})
   end
 end

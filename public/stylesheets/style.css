@@ -24,14 +24,14 @@ p.head_2 {
 
 p.head_3 {
 	color: #44c1cf;
-	font-size: 21px;
+	font-size: 19px;
 	font-family: myFont;
 	padding-bottom:10px;
 	border-bottom: 1px dashed #696969;
 }
 
 p.head_4 {
-	font-size:14px;
+	font-size:16px;
 	font-family: myFont;
 	margin-bottom: 5px;
 }
@@ -51,6 +51,7 @@ a:link, a:active, a:visited, a:hover { color: #44c1cf; text-decoration:none; }
 a.custom_font {
 	font-size: 20px;
 	font-family: myFont;
+	font-style: ;
 }
 
 
@@ -71,20 +72,24 @@ body {
 
 .nav-hor {
 	padding: 0px;
+	margin: 0px;
 	width: auto;
+	padding-bottom:10px;
 }
 
 .nav-hor ul {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 }
 
 .nav-hor li {
 	display: inline;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin: 0;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	margin: 0px;
 }
 
 #header {

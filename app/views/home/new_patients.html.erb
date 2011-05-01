@@ -4,6 +4,7 @@
 
 <p>For patients to choose a dental office appropriate to their needs there must exist a match between services sought by the patient and the services provided by the office. Our team maintains the highest standards of skill, concern and quality of care.</p>
 
+<p>Click on a link below to learn more.</p>
 
 <div class="toggle" data-target="1">
 	Your First Appointment
@@ -13,7 +14,7 @@
 	
 	<p>Welcome to our practice and thank you for giving us the opportunity to serve your dental health needs.</p>
 
-	<p><b>IMPORTANT: All patients under the age of 18 years of age must be accompanied by a parent or guardian at the initial consultation.</b></p>
+	<p><b>IMPORTANT: All patients under the age of 18 must be accompanied by a parent or guardian at the initial consultation.</b></p>
 </div>
 
 
@@ -23,7 +24,7 @@
 </div>
 <div id="showable-2" class="showable">
 	<p>This is where a description of the new patient forms and what one is to do with them.</p>
-	<p><%= link_to "download pdf", "files/new_patient_forms.pdf"%></p>
+	<p><%= link_to "download pdf", "files/new_patient_forms.pdf", :target => "_new" %></p>
 </div>
 
 <div class="toggle" data-target="3">
@@ -52,7 +53,20 @@
 </div>
 
 <div id="showable-5" class="showable">
-	<p>Here is some information on your location and parking. </p>
+	<p>	<form class="send_email_form" action="http://maps.google.com/maps" method="get" target="_blank">
+		<fieldset>
+			<label for="starting_address">Enter your starting address:</label>
+			<input type="text" name="saddr" id="starting_address"/>
+		</fieldset>
+		<input type="hidden" name="daddr" value="dentist place"/>
+		<fieldset>
+			<input type="submit" value="get directions" />
+		</fieldset>
+		</form>
+	</p>
+	
+	<p>By bus: The office is on CTA bus routes #56A and #270.<br/>
+		By train: The Jefferson Park Metra station is 2 miles south of our office. Transfer to CTA bus #56A or #270.</p>
 </div>
 
 
