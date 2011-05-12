@@ -175,6 +175,11 @@ form.send_email_form label {
 	vertical-align: top;
 }
 
+#radio {
+	margin-left:162px;
+	
+}
+
 .toggle {
 	color: #44c1cf;
 	font-size: 17px;

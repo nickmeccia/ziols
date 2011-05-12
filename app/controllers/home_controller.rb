@@ -1,5 +1,16 @@
 class HomeController < ApplicationController
 
+# 
+# def get_header
+#   headers = ["First", "Second", "Third", "Fourth", "Fifth"]
+#   index = rand headers.size
+#   header_to_display = headers[index]
+# 
+#   
+# end
+
+
+
 def index
   @header = "index"
 end

@@ -1,5 +1,5 @@
 <p class="head_1">contact</p>
-<p>Should you have an emergency, please call our offices. If the emergency is during non-business hours, please call Dr. Ziols at 847.951.6166. Please feel free to email us at <%= link_to 'ziols@gmail.com' %></p>
+<p>Should you have an emergency, please call our offices. If the emergency is during non-business hours, please call Dr. Ziols at 847.951.6166. Please feel free to email us at <%= link_to 'ziols@gmail.com' %>, or fax us at 773.763.7650.</p>
 
 <p>Making an appointment with Dr Ziols is easy. Either call us during business hours at 847.763.1000, or complete the form below. All fields are optional.</p>
 
@@ -32,6 +32,21 @@
 		<%= label "email", "preferred appointment time" %>
 		<%= text_field "email", "appointment_time" %><br/>
 	</fieldset>
+
+<fieldset>
+	preferred appointment time
+</fieldset>
+
+<div id="radio">	
+	<fieldset>
+		<%= label "email", "8:00 - 5:00" %>
+		<%= radio_button "email", "eight_five", :checked => "true" %><br/>
+		<%= label "email", "5:00 - 7:00" %>
+		<%= radio_button "email", "five_seven", :checked => "checked" %><br/>
+	</fieldset>
+</div>
+	
+	
 	<fieldset>
 		<%= label "email", "additional comments" %>
 		<%= text_area "email", "comments" %><br/>
