@@ -1,18 +1,16 @@
 class HomeController < ApplicationController
 
-# 
-# def get_header
-#   headers = ["First", "Second", "Third", "Fourth", "Fifth"]
-#   index = rand headers.size
-#   header_to_display = headers[index]
-# 
-#   
-# end
+
+def get_header
+  headers = ["index", "about", "contact", "links", "services", "new_patients"]
+  index = rand headers.size
+  return headers[index]
+end
 
 
 
 def index
-  @header = "index"
+  @header = get_header
 end
 
 def about
@@ -23,14 +21,6 @@ def contact
   @header = "contact"
 end
 
-def faq
-  @header = "faq"
-end
-
-def new_patients
-  @header = "new_patients"
-end
-
 def links
   @header = "links"
 end
@@ -38,5 +28,6 @@ end
 def services
   @header = "services"
 end
+
 
 end
