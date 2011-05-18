@@ -176,7 +176,9 @@ form.send_email_form label {
 }
 
 #radio {
-	margin-left:162px;
+	margin-top:-37px;
+	padding-top:0px;
+	margin-left:67px;
 	
 }
 

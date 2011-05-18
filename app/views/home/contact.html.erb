@@ -28,22 +28,26 @@
 		<%= label "email", "best time to call" %>
 		<%= text_field "email", "call_time" %><br/>
 	</fieldset>
-	<fieldset>
-		<%= label "email", "preferred appointment time" %>
-		<%= text_field "email", "appointment_time" %><br/>
-	</fieldset>
 
 <fieldset>
-	preferred appointment time
+	Preferred appointment time
 </fieldset>
 
 <div id="radio">	
 	<fieldset>
-		<%= label "email", "8:00 - 5:00" %>
-		<%= radio_button "email", "eight_five", :checked => "true" %><br/>
-		<%= label "email", "5:00 - 7:00" %>
-		<%= radio_button "email", "five_seven", :checked => "checked" %><br/>
+		<%= label_tag "email_appointment_day_weekday", "Weekdays" %>
+		<%= radio_button_tag "email[appointment_day]", "Weekdays" %><br/>
+		<%= label_tag "email_appointment_day_weekend", "Weekends" %>
+		<%= radio_button_tag "email[appointment_day]", "Weekends" %><br/>
 	</fieldset>
+
+	<fieldset>
+		<%= label_tag "email_appointment_time_8:00_-_5:00", "8:00 - 5:00" %>
+		<%= radio_button_tag "email[appointment_time]", "8:00 - 5:00" %><br/>
+		<%= label_tag "email_appointment_time_5:00_-_7:00", "5:00 - 7:00" %>
+		<%= radio_button_tag "email[appointment_time]", "5:00 - 7:00" %><br/>
+	</fieldset>
+
 </div>
 	
 	
