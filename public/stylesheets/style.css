@@ -1,192 +1,198 @@
-/*
-* CSS
-* 
-* @version 1.0
-* @author Nick Meccia
-*
-*/
+body {
+  font-size: 13px;
+  font-color: #262626;
+  font-family: helvetica, arial;
+  line-height: 26px;
+  background-image: url('/images/tile.jpg');
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* TYPOGRAPHY
+-------------------------------------------------*/
 
 @font-face {
-	font-family: myFont;
-	src: url('/fonts/myFont.ttf');
+  font-family: myFont;
+  src: url('/fonts/myFont.ttf');
 }
 
-p.head_1 {
-	font-size: 26px;
-	font-family: myFont;
+h1 {
+  font-family: myFont;
+  font-size: 26px;
+  font-weight: normal;
 }
 
-p.head_2 {
-	font-size: 21px;
-	font-family: myFont;
-	/***italicize?**/
+h2 {
+  font-family: myFont;
+  font-size: 21px;
+  font-weight: normal;
 }
 
-p.head_3 {
-	color: #44c1cf;
-	font-size: 19px;
-	font-family: myFont;
-	padding-bottom:10px;
-	border-bottom: 1px dashed #696969;
+h3 {
+  border-bottom: 1px dashed #696969;
+  color: #44c1cf;
+  font-family: myFont;
+  font-size: 19px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
-p.head_4 {
-	font-size:16px;
-	font-family: myFont;
-	margin-bottom: 5px;
+h4 {
+  color: #888;
+  font-family: myFont;
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 5px;
 }
 
-p.head_blue {
-	color: #44c1cf;
-	font-size: 17px;
-	font-family: myFont;
-	line-height: 0px;
+h5 {
+  color: #44c1cf;
+  font-family: myFont;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 0px;
 }
+
+a {
+  color: #44c1cf;
+  text-decoration: none;
+}
+
+
+/* LAYOUT
+-------------------------------------------------*/
 
 img {
-	border-style: none;
-}
-a:link, a:active, a:visited, a:hover { color: #44c1cf; text-decoration:none; }
-	
-a.custom_font {
-	font-size: 20px;
-	font-family: myFont;
-	font-style: ;
-}
-
-
-#wrap {
-	width: 1000px;
-	background: #ffffff;
-}
-
-body {
-	font-size: 12px;
-	font-color: #262626;
-	font-family: helvetica, arial;
-	line-height: 24px;
-	background-image: url('/images/tile.jpg');
-	width: 1000px;
-	margin: 0 auto;
-}
-
-.nav-hor {
-	padding: 0px;
-	margin: 0px;
-	width: auto;
-	padding-bottom:10px;
-}
-
-.nav-hor ul {
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
-}
-
-.nav-hor li {
-	display: inline;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 5px;
-	padding-bottom: 10px;
-	margin: 0px;
-}
-
-#header {
-
-}
-
-#container {
-		width: 800px;
-		margin: 0 auto;
-}
-
-#links {
-	font-size: 16px;
-	font-color: #44c1cf;
-	font-family: helvetica, arial;
-	width: 800px;
-	margin: 0 auto;
-	text-align: center;
-	padding-bottom: 15px;
-}
-
-#yield {
-	width: 580px;
-	float:left;
-}
-
-#sidebar {
-	width: 180px;
-	float:right;
-	border-left: 1px solid #696969;
-	padding-left: 20px;
-}
-
-
-#footer {
-	width: 800px;
-	display: block;
-	clear: both;
-	border-top: 1px solid #696969;
-	padding-top: 0px;
-	padding-bottom: 30px;
-	text-align: center;
-}
-
-#text_box {
-	line-height: 15px;
+  border-style: none;
+  display: block;
 }
 
 img.center {
-	display: block;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 15px;
+  margin: 0 auto;
+  padding-top: 15px;
+  text-align: center;
 }
 
-form.send_email_form fieldset {
-	border-style: none;
-	margin-left: 60px;
-}
-form.send_email_form fieldset textarea {
-	width: 275px;
-	height: 100px;
-	border: 1px solid #44c1cf;
+#wrap {
+  width: 1000px;
+  background: #ffffff;
 }
 
-form.send_email_form fieldset input[type=text] {
-	width: 275px;
-	border: 1px solid #44c1cf;
+nav {
+  font-family: myFont;
+  font-size: 20px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  text-align: center;
+  width: 800px;
 }
 
-form.send_email_form fieldset input[type=submit] {
- 	margin-left: 162px;
-	border: 1px solid #44c1cf;
-	background-color: #ffffff;
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 
-form.send_email_form label {
-	width: 150px;
-	padding-right: 5px;
-	display: inline-block;
-	text-align: right;
-	vertical-align: top;
+nav li {
+  display: inline;
+  padding: 5px 10px 10px 10px;
+  margin: 0px;
+}
+
+#container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#yield {
+  float: left;
+  width: 580px;
+}
+
+#sidebar {
+  width: 180px;
+  float: right;
+  border-left: 1px solid #696969;
+  padding: 0 0 30px 20px;
+  line-height: 18px;
+}
+
+#sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar img {
+  padding-top: 20px;
+}
+
+footer {
+  width: 800px;
+  display: block;
+  clear: both;
+  border-top: 1px solid #696969;
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+
+footer h4,
+footer a {
+  opacity: 0.9;
+}
+
+
+/* PAGES
+-------------------------------------------------*/
+
+.links img {
+  padding-top: 25px;
+}
+
+legend {
+  padding: 5px 0 0 60px;
 }
 
 #radio {
-	margin-top:-37px;
-	padding-top:0px;
-	margin-left:67px;
-	
+  margin-top: -37px;
+  padding-top: 7px;
+  margin-left: 67px; 
 }
 
 .toggle {
-	color: #44c1cf;
-	font-size: 17px;
-	font-family: myFont;
+  color: #44c1cf;
+  cursor: pointer;
+  font-size: 17px;
+  font-family: myFont;
 }
 
-.showable {
+form.send_email_form fieldset {
+  border-style: none;
+  margin-left: 60px;
+}
+
+form.send_email_form fieldset textarea {
+  width: 275px;
+  height: 100px;
+  border: 1px solid #44c1cf;
+}
+
+form.send_email_form fieldset input[type=text] {
+  width: 275px;
+  border: 1px solid #44c1cf;
+}
+
+form.send_email_form fieldset input[type=submit] {
+  margin-left: 162px;
+  border: 1px solid #44c1cf;
+  background-color: #ffffff;
+}
+
+form.send_email_form label {
+  width: 150px;
+  padding-right: 5px;
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
 }
