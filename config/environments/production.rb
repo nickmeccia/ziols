@@ -52,8 +52,9 @@ Ziols::Application.configure do
   ActionMailer::Base.smtp_settings = {
     :address  => "smtp.gmail.com",
     :port  => 587,
-    :user_name  => "drziols",
-    :password  => "nickiscool",
-    :authentication => :plain
+    :user_name  => "drziols@gmail.com",
+    :password  => "workhard1983",
+    :authentication => :plain,
+    :enable_starttls_auto => true
   }
 end
