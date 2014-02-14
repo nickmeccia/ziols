@@ -167,6 +167,10 @@ legend {
   font-family: myFont;
 }
 
+.showable {
+  margin-bottom: 50px;
+}
+
 form.send_email_form fieldset {
   border-style: none;
   margin-left: 60px;
