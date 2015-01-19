@@ -35,28 +35,55 @@
 
       <div class="sidebar">
         <h3>your smile is our priority!</h3>
-        <h4>contact:</h4>
-        <ul>
-          <li>773 763 1000</li>
-          <li>773 763 7750</li>
-          <li><%= link_to "drziols@gmail.com" %></li>
-          <li><a href="http://www.facebook.com/ZiolsSmiles" target="_blank">Facebook</a></li>
-        </ul>
-        <h4>hours:</h4>
-        <ul>
-          <li>monday: 9-4</li>
-          <li>tuesday: 10-7</li>
-          <li>wednesday: by appointment</li>
-          <li>thursday: 10-7</li>
-          <li>friday: 9-4</li>
-          <li>saturday: 8-1</li>
-        </ul>
-        <h4>address:</h4>
-        <ul>
-          <li>5399 n milwaukee ave</li>
-          <li>chicago, il 60630</li>
-        </ul>
-        <%= link_to image_tag("map.jpg"), 'http://maps.google.com/maps?um=1&ie=UTF-8&q=dr+gordon+j+ziols&fb=1&gl=us&hq=dr+gordon+j+ziols&hnear=Park+Ridge,+IL&cid=0,0,2998087269099188908&ei=s3ObTe6SNov2tgPdo42dBA&sa=X&oi=local_result&ct=image&resnum=4&ved=0CDMQnwIwAw', {:target => "_new"}%>
+
+        <section>
+          <h4>contact:</h4>
+          <ul>
+            <li><a href="tel:7737631000">773 763 1000</a></li>
+            <li><a href="tel:7737637750">773 763 7750</a></li>
+            <li><%= link_to "drziols@gmail.com" %></li>
+            <li><a href="http://www.facebook.com/ZiolsSmiles" target="_blank">Facebook</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h4>hours:</h4>
+          <table>
+            <tr>
+              <td>monday:</td>
+              <td>9:00 - 4:00</td>
+            </tr>
+            <tr>
+              <td>tuesday:</td>
+              <td>10:00 - 7:00</td>
+            </tr>
+            <tr>
+              <td>wednesday:</td>
+              <td>by appointment</td>
+            </tr>
+            <tr>
+              <td>thursday:</td>
+              <td>10:00 - 7:00</td>
+            </tr>
+            <tr>
+              <td>friday:</td>
+              <td>9:00 - 4:00</td>
+            </tr>
+            <tr>
+              <td>saturday:</td>
+              <td>8:00 - 1:00</td>
+            </tr>
+          </table>
+        </section>
+
+        <section>
+          <h4>address:</h4>
+          <ul>
+            <li>5399 n milwaukee ave</li>
+            <li>chicago, il 60630</li>
+          </ul>
+          <%= link_to image_tag("map.jpg"), 'http://maps.google.com/maps?um=1&ie=UTF-8&q=dr+gordon+j+ziols&fb=1&gl=us&hq=dr+gordon+j+ziols&hnear=Park+Ridge,+IL&cid=0,0,2998087269099188908&ei=s3ObTe6SNov2tgPdo42dBA&sa=X&oi=local_result&ct=image&resnum=4&ved=0CDMQnwIwAw', {:target => "_new"}%>
+        </section>
       </div>
     </div>
   </div>

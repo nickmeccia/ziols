@@ -11,6 +11,10 @@ body {
   line-height: 1.4125rem;
 }
 
+::selection {
+  background: #44ACCF;
+}
+
 /* TYPOGRAPHY
 -------------------------------------------------*/
 
@@ -21,7 +25,7 @@ h1 {
   margin-bottom: 0.625rem;
 }
 
-h2 {
+h2, legend {
   font-family: 'raleway-light', helvetica, arial;
   font-size: 1.3125rem;
   line-height: 1.8125rem;
@@ -30,8 +34,10 @@ h2 {
 
 h3 {
   border-bottom: 1px dashed #696969;
-  color: #44c1cf;
-  font-family: 'raleway-light', helvetica, arial;
+  font-family: 'raleway-lightitalic', helvetica, arial;
+  font-size: 1.3125rem;
+  line-height: 1.8125rem;
+  margin-bottom: 1.3125rem;
 }
 
 h4 {
@@ -41,7 +47,7 @@ h4 {
 }
 
 a {
-  color: #44c1cf;
+  color: #44ACCF;
   text-decoration: none;
 }
 
@@ -76,12 +82,18 @@ header {
 }
 
 nav {
+  font-size: 1.3125rem;
   margin: 0 auto;
   text-align: center;
 }
 
 nav li {
   display: inline-block;
+  margin-right: 1.3125rem;
+}
+
+nav li:last-child {
+  margin-right: 0;
 }
 
 .content {
@@ -95,27 +107,38 @@ nav li {
 }
 
 .content .container div {
-  align-self: stretch;
-  flex: 1;
-  margin-right: 2.625rem;
-  /*width: 52rem;*/
+  margin-right: 3.975rem;
 }
 
 .content .container .sidebar {
   margin-right: 0;
-  /*width: 30rem;*/
+  min-width: 15rem;
+}
+
+section, form {
+  margin-bottom: 1.8125rem;
 }
 
 .sidebar ul {
   list-style-type: none;
 }
 
-section {
-  margin-bottom: 1.8125rem;
+.sidebar li {
+  margin-bottom: 0;
+}
+
+.sidebar section {
+  margin-bottom: 1rem;
+}
+
+.toggle {
+  cursor: pointer;
+  display: block;
+  margin-bottom: 0.625rem;
 }
 
 footer {
-  border-top: 1px solid #696969;
+  border-top: 1px solid #ccc;
   width: 100%;
 }
 
@@ -131,6 +154,10 @@ li {
   margin-bottom: 0.25rem;
 }
 
+td {
+  padding-right: 0.625rem;
+}
+
 /* FORMS
 -------------------------------------------------*/
 
@@ -143,7 +170,7 @@ label {
 
 input[type=text],
 textarea {
-  border: 1px solid #262626;
+  border: 1px solid #ccc;
   border-radius: 3px;
   display: block;
   font-family: 'raleway-light', helvetica, arial;
@@ -151,60 +178,39 @@ textarea {
   padding: 0.5rem 0.625rem;
 }
 
+input:focus,
+textarea:focus {
+  outline: #44ACCF auto 5px;
+}
+
 input[type=radio] {
   display: inline-block;
 }
 
-
-
-
-/* PAGES
--------------------------------------------------*/
-
-
-#radio {
-  margin-top: -37px;
-  padding-top: 7px;
-  margin-left: 67px; 
+.radio {
+  margin-bottom: 0.25rem;
 }
 
-.toggle {
+.radio label {
+  font-size: 1rem;
+  text-transform: none;
+}
+
+input[type=submit] {
+  background-color: #44ACCF;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-family: 'raleway-light', helvetica, arial;
+  font-size: 1rem;
+  padding: 0.5rem 0.625rem;
+}
+
+input[type=submit]:hover {
   cursor: pointer;
-  display: block;
-  margin-bottom: 0.625rem;
 }
 
-/*form.send_email_form fieldset {
-  border-style: none;
-  margin-left: 60px;
-}
-
-form.send_email_form fieldset textarea {
-  width: 275px;
-  height: 100px;
-  border: 1px solid #44c1cf;
-}
-
-form.send_email_form fieldset input[type=text] {
-  width: 275px;
-  border: 1px solid #44c1cf;
-}
-
-form.send_email_form fieldset input[type=submit] {
-  margin-left: 162px;
-  border: 1px solid #44c1cf;
-  background-color: #ffffff;
-}
-
-form.send_email_form label {
-  width: 150px;
-  padding-right: 5px;
-  display: inline-block;
-  text-align: right;
-  vertical-align: top;
-}
-*/
-/* FONT FACE
+/* FONTZ
 -------------------------------------------------*/
 
 @font-face {
