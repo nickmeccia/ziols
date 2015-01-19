@@ -65,6 +65,7 @@ em {
 
 small {
   font-size: 0.825rem;
+  opacity: 0.5;
 }
 
 /* LAYOUT
@@ -79,6 +80,13 @@ small {
 
 header {
   width: 100%;
+}
+
+.hero {
+  background: url("/images/headers/header-1.jpg") no-repeat center center;
+  background-size: cover;
+  border: 1px solid #ccc;
+  height: 30rem;
 }
 
 nav {
@@ -97,6 +105,7 @@ nav li:last-child {
 }
 
 .content {
+  margin-bottom: 2.625rem;
   width: 100%;
 }
 
@@ -115,8 +124,18 @@ nav li:last-child {
   min-width: 15rem;
 }
 
+.content .container .group-photo {
+  background-image: url("/images/group-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: block;
+  margin-right: 0;
+  max-width: 655px;
+  height: 355px;
+}
+
 section, form {
-  margin-bottom: 1.8125rem;
+  margin-bottom: 2.625rem;
 }
 
 .sidebar ul {
@@ -140,6 +159,14 @@ section, form {
 footer {
   border-top: 1px solid #ccc;
   width: 100%;
+}
+
+footer p, footer small {
+  display: inline-block;
+}
+
+footer small {
+  float: right;
 }
 
 /* LISTS
@@ -208,6 +235,45 @@ input[type=submit] {
 
 input[type=submit]:hover {
   cursor: pointer;
+}
+
+/* FONTZ
+-------------------------------------------------*/
+
+@media screen and (max-width: 1000px) {
+  .content .container .group-photo {
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .content .container .group-photo {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content .container .group-photo {
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .content .container .group-photo {
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content .container .group-photo {
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .content .container .group-photo {
+    height: 200px;
+  }
 }
 
 /* FONTZ
