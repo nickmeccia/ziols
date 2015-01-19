@@ -8,58 +8,64 @@
 </head>
 
 <body>
-<div id="wrap">
+<div id="main">
   <header>
     <% @header ||= "about" %>
-      <%= render :partial => "home/#{@header}" %>
+    <%= render :partial => "home/#{@header}" %>
+
+    <div class="container">
+      <nav>
+        <ul>
+          <li><%= link_to "home", root_path %></li>
+          <li><%= link_to "about", about_path %></li>
+          <li><%= link_to "services", services_path %></li>
+          <li><%= link_to "new patients", new_patients_path %></li>
+          <li><%= link_to "contact", contact_path %></li>
+          <li><%= link_to "links", links_path %></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <div id="container">
-    <nav>
-      <ul>
-        <li><%= link_to "home", root_path %></li>
-        <li><%= link_to "about", about_path %></li>
-        <li><%= link_to "services", services_path %></li>
-        <li><%= link_to "new patients", new_patients_path %></li>
-        <li><%= link_to "contact", contact_path %></li>
-        <li><%= link_to "links", links_path %></li>
-      </ul>
-    </nav>
+  <div class="content">
+    <div class="container">
+      <div>
+        <%= yield %>
+      </div>
 
-		<div id="yield">
-			<%= yield %><br/>
-		</div>
-
-    <div id="sidebar">
-      <h3>your smile is our priority!</h3>
-      <h5>contact:</h5>
-      <ul>
-        <li>773 763 1000</li>
-        <li>773 763 7750</li>
-        <li><%= link_to "drziols@gmail.com" %></li>
-        <li><a href="http://www.facebook.com/ZiolsSmiles" target="_blank">Facebook</a></li>
-      </ul>
-      <h5>hours:</h5>
-      <ul>
-        <li>monday: 9-4</li>
-        <li>tuesday: 10-7</li>
-        <li>wednesday: by appointment</li>
-        <li>thursday: 10-7</li>
-        <li>friday: 9-4</li>
-        <li>saturday: 8-1</li>
-      </ul>
-      <h5>address:</h5>
-      <ul>
-        <li>5399 n milwaukee ave</li>
-        <li>chicago, il 60630</li>
-      </ul>
-      <%= link_to image_tag("map.jpg"), 'http://maps.google.com/maps?um=1&ie=UTF-8&q=dr+gordon+j+ziols&fb=1&gl=us&hq=dr+gordon+j+ziols&hnear=Park+Ridge,+IL&cid=0,0,2998087269099188908&ei=s3ObTe6SNov2tgPdo42dBA&sa=X&oi=local_result&ct=image&resnum=4&ved=0CDMQnwIwAw', {:target => "_new"}%>
+      <div class="sidebar">
+        <h3>your smile is our priority!</h3>
+        <h4>contact:</h4>
+        <ul>
+          <li>773 763 1000</li>
+          <li>773 763 7750</li>
+          <li><%= link_to "drziols@gmail.com" %></li>
+          <li><a href="http://www.facebook.com/ZiolsSmiles" target="_blank">Facebook</a></li>
+        </ul>
+        <h4>hours:</h4>
+        <ul>
+          <li>monday: 9-4</li>
+          <li>tuesday: 10-7</li>
+          <li>wednesday: by appointment</li>
+          <li>thursday: 10-7</li>
+          <li>friday: 9-4</li>
+          <li>saturday: 8-1</li>
+        </ul>
+        <h4>address:</h4>
+        <ul>
+          <li>5399 n milwaukee ave</li>
+          <li>chicago, il 60630</li>
+        </ul>
+        <%= link_to image_tag("map.jpg"), 'http://maps.google.com/maps?um=1&ie=UTF-8&q=dr+gordon+j+ziols&fb=1&gl=us&hq=dr+gordon+j+ziols&hnear=Park+Ridge,+IL&cid=0,0,2998087269099188908&ei=s3ObTe6SNov2tgPdo42dBA&sa=X&oi=local_result&ct=image&resnum=4&ved=0CDMQnwIwAw', {:target => "_new"}%>
+      </div>
     </div>
+  </div>
 
-    <footer>
-      <h4>designed by <%= link_to 'nick meccia', 'http://nickmeccia.com', {:target => "_new"}%> </h4>
-    </footer>
-  </div>  
+  <footer>
+    <div class="container">
+      <small>designed by <%= link_to 'nick meccia', 'http://nickmeccia.com', {:target => "_new"}%> </small>
+    </div>
+  </footer>
 </div>
 	
 </body>

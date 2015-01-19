@@ -1,59 +1,64 @@
 <h1>contact</h1>
+
 <p>Should you have an emergency, please call our offices. If the emergency is during non-business hours, please call Dr. Ziols at 847.951.6166. Please feel free to email us at <%= link_to 'drziols@gmail.com' %>, or fax us at 773.763.7650.</p>
 
 <p>Making an appointment with Dr Ziols is easy. Either call us during business hours at 773.763.1000, or complete the form below. All fields are optional.</p>
 
 <%= form_tag send_email_path, {:class => "send_email_form"} do %>
-	<fieldset>
-		<%= label "email", "name" %>
-		<%= text_field "email", "name" %><br/>
-	</fieldset>
-	<fieldset>
-		<%= label "email", "email" %>
-		<%= text_field "email", "email" %><br/>
-	</fieldset>
-	<fieldset>
-		<%= label "email", "city" %>
-		<%= text_field "email", "city" %><br/>
-	</fieldset>
-	<fieldset>
-		<%= label "email", "zip" %>
-		<%= text_field "email", "zip" %><br/>
-	</fieldset>
-	<fieldset>
-		<%= label "email", "phone" %>
-		<%= text_field "email", "phone" %><br/>
-	</fieldset>
-	<fieldset>
-		<%= label "email", "best time to call" %>
-		<%= text_field "email", "call_time" %><br/>
-	</fieldset>
+  <fieldset>
+    <%= label "email", "name" %>
+    <%= text_field "email", "name" %><br/>
+  </fieldset>
+  <fieldset>
+    <%= label "email", "email" %>
+    <%= text_field "email", "email" %><br/>
+  </fieldset>
+  <fieldset>
+    <%= label "email", "city" %>
+    <%= text_field "email", "city" %><br/>
+  </fieldset>
+  <fieldset>
+    <%= label "email", "zip" %>
+    <%= text_field "email", "zip" %><br/>
+  </fieldset>
+  <fieldset>
+    <%= label "email", "phone" %>
+    <%= text_field "email", "phone" %><br/>
+  </fieldset>
+  <fieldset>
+    <%= label "email", "best time to call" %>
+    <%= text_field "email", "call_time" %><br/>
+  </fieldset>
 
-	<legend>
-		Preferred appointment time
-	</legend>
+  <legend>
+    Preferred appointment time
+  </legend>
 
-  <div id="radio">
-    <fieldset>
-      <%= label_tag "email_appointment_day_weekday", "Weekdays" %>
-      <%= radio_button_tag "email[appointment_day]", "Weekdays" %><br/>
-      <%= label_tag "email_appointment_day_weekend", "Weekends" %>
-      <%= radio_button_tag "email[appointment_day]", "Weekends" %><br/>
-    </fieldset>
+  <fieldset>
+    <%= radio_button_tag "email[appointment_day]", "Weekdays" %>
+    <%= label_tag "email_appointment_day_weekday", "Weekdays" %>
+  </fieldset>
 
-    <fieldset>
-      <%= label_tag "email_appointment_time_8:00_-_5:00", "8:00 - 5:00" %>
-      <%= radio_button_tag "email[appointment_time]", "8:00 - 5:00" %><br/>
-      <%= label_tag "email_appointment_time_5:00_-_7:00", "5:00 - 7:00" %>
-      <%= radio_button_tag "email[appointment_time]", "5:00 - 7:00" %><br/>
-    </fieldset>
-  </div>
-	
-	<fieldset>
-		<%= label "email", "additional comments" %>
-		<%= text_area "email", "comments" %><br/>
-	</fieldset>
-	<fieldset>
-		<%= submit_tag "Send" %>
-	</fieldset>
+  <fieldset>
+    <%= radio_button_tag "email[appointment_day]", "Weekends" %>
+    <%= label_tag "email_appointment_day_weekend", "Weekends" %>
+  </fieldset>
+
+  <fieldset>
+    <%= radio_button_tag "email[appointment_time]", "8:00 - 5:00" %>
+    <%= label_tag "email_appointment_time_8:00_-_5:00", "8:00 - 5:00" %>
+  </fieldset>
+
+  <fieldset>
+    <%= radio_button_tag "email[appointment_time]", "5:00 - 7:00" %>
+    <%= label_tag "email_appointment_time_5:00_-_7:00", "5:00 - 7:00" %>
+  </fieldset>
+
+  <fieldset>
+    <%= label "email", "additional comments" %>
+    <%= text_area "email", "comments" %><br/>
+  </fieldset>
+  <fieldset>
+    <%= submit_tag "Send" %>
+  </fieldset>
 <%- end -%>

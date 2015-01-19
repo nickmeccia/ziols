@@ -1,82 +1,63 @@
-<h1>new patients</h1>
+<section>
+  <h1>new patients</h1>
 
-<p>Thank you for choosing us to provide your dental care. Our goal is to provide timely, comprehensive treatment to people of all ages with empathy and respect, in a relaxed and professional environment, using state of the art technology.</p>
+  <p>Thank you for choosing us to provide your dental care. Our goal is to provide timely, comprehensive treatment to people of all ages with empathy and respect, in a relaxed and professional environment, using state of the art technology.</p>
 
-<p>For patients to choose a dental office appropriate to their needs there must exist a match between services sought by the patient and the services provided by the office. Our team maintains the highest standards of skill, concern and quality of care.</p>
+  <p>For patients to choose a dental office appropriate to their needs there must exist a match between services sought by the patient and the services provided by the office. Our team maintains the highest standards of skill, concern and quality of care.</p>
 
-<p>Click on a link below to learn more.</p>
+  <p>Click on a link below to learn more.</p>
+</section>
 
-<div class="toggle" data-target="1">
-	Your First Appointment
-</div>
-<div id="showable-1" class="showable">
-	<p>Your initial appointment will take approximately 1 hour. Please click here to download your New Patient Package. It is important that you completely fill out these forms and bring them, along with your insurance card, to your first visit. In order to best serve your needs we cannot begin the appointment without these records. Excellence in dentistry begins with a careful diagnosis and treatment plan to move us towards the goals we will establish together. During your first visit, we will perform a comprehensive examination of teeth, gums, bite, joints and soft tissue. We will utilize all cavity and disease detecting radiographs and intra-oral photographs to identify areas of concern, determine your needs and develop a lifetime plan for your oral health. We believe this in-depth examination to be the cornerstone of quality dentistry.</p>
-	
-	<p>Welcome to our practice and thank you for giving us the opportunity to serve your dental health needs.</p>
+<a class="toggle" data-target="1">Your First Appointment</a>
 
-	<p><em>IMPORTANT: All patients under the age of 18 must be accompanied by a parent or guardian at the initial consultation.</em></p>
-</div>
+<section id="showable-1" class="showable">
+  <p>Your initial appointment will take approximately 1 hour. Please click <a href="#">here</a> to download your New Patient Package. It is important that you completely fill out these forms and bring them, along with your insurance card, to your first visit. In order to best serve your needs we cannot begin the appointment without these records. Excellence in dentistry begins with a careful diagnosis and treatment plan to move us towards the goals we will establish together. During your first visit, we will perform a comprehensive examination of teeth, gums, bite, joints and soft tissue. We will utilize all cavity and disease detecting radiographs and intra-oral photographs to identify areas of concern, determine your needs and develop a lifetime plan for your oral health. We believe this in-depth examination to be the cornerstone of quality dentistry.</p>
 
-<div class="toggle" data-target="2">
-	New Patient Forms
-</div>
-<div id="showable-2" class="showable">
-	<p>Please bring a copy of these forms to your first appointment, printed and filled out.</p>
-	<p><%= link_to "download pdf", "files/new_patient_forms.pdf", :target => "_new" %></p>
-</div>
+  <p>Welcome to our practice and thank you for giving us the opportunity to serve your dental health needs.</p>
 
-<div class="toggle" data-target="3">
-	Dental Insurance
-</div>
-<div id="showable-3" class="showable">
-	<p>We would be pleased to assist you in maximizing your insurance benefits by completing your claim forms. We accept most insurance plans. Contact us to find out if we are a participating provider on your insurance plan. Even if we are not a participating provider on your plan, most PPO plans offer out-of-network benefits. We do not accept DMO insurance or public aid</p>
-	<p>Get the maximum insurance benefit allowable for your dental treatment. As an added benefit to our patients, we will work with you and your insurance company to process your claims and help you get the maximum insurance benefit allowable. Unfortunately, your dental insurance company will only pay a portion of your dental treatment. We will estimate your portion and ask you to pay that amount at the time of service.</p>
-	<p>Everyone should be able to have a bright and healthy smile. Dr Ziols will find an affordable payment option that works for you. <%= link_to 'Contact our staff', contact_path %> to discuss your dental financing options.
-</div>
+  <p><em>IMPORTANT: All patients under the age of 18 must be accompanied by a parent or guardian at the initial consultation.</em></p>
+</section>
 
+<a class="toggle" data-target="2">New Patient Forms</a>
 
-<div class="toggle" data-target="4">
-	Financial Policy
-</div>
+<section id="showable-2" class="showable">
+  <p>Please bring a copy of these forms to your first appointment, printed and filled out.</p>
+  <p><%= link_to "download pdf", "files/new_patient_forms.pdf", :target => "_new" %></p>
+</section>
 
-<div id="showable-4" class="showable">
-	<p>Dr Ziols welcomes patients with and without insurance. Dentistry is affordable at Dr Ziols' office. The staff will work with you to develop a treatment plan that will satisfy your needs and fit into your budget. Dr Ziols offers a variety of payment options to ensure that your dental treatment and cosmetic procedures are affordable. We realize that people have different needs in fulfilling their financial obligations, and therefore, are providing the following payments options.</p>
+<a class="toggle" data-target="3">Dental Insurance</a>
 
-	<p>For your convenience, you may choose from any of the following forms of payment: Cash, Visa, Master Card, American Express, Discover, Personal Checks, Direct Debit to a personal account of your choice, and/or with third party financing through such companies as <%= link_to "CareCredit", 'http://www.carecredit.com/dentistry/whycc.html', {:target => "_new"} %>. </p>
-</div>
+<section id="showable-3" class="showable">
+  <p>We would be pleased to assist you in maximizing your insurance benefits by completing your claim forms. We accept most insurance plans. Contact us to find out if we are a participating provider on your insurance plan. Even if we are not a participating provider on your plan, most PPO plans offer out-of-network benefits. We do not accept DMO insurance or public aid</p>
 
+  <p>Get the maximum insurance benefit allowable for your dental treatment. As an added benefit to our patients, we will work with you and your insurance company to process your claims and help you get the maximum insurance benefit allowable. Unfortunately, your dental insurance company will only pay a portion of your dental treatment. We will estimate your portion and ask you to pay that amount at the time of service.</p>
 
-<div class="toggle" data-target="5">
-	Location & Parking
-</div>
+  <p>Everyone should be able to have a bright and healthy smile. Dr Ziols will find an affordable payment option that works for you. <%= link_to 'Contact our staff', contact_path %> to discuss your dental financing options.
+</section>
 
-<div id="showable-5" class="showable">
-	<p>	<form class="send_email_form" action="http://maps.google.com/maps" method="get" target="_blank">
-		<fieldset>
-			<label for="starting_address">Enter your address:</label>
-			<input type="text" name="saddr" id="starting_address"/>
-		</fieldset>
-		<input type="hidden" name="daddr" value="5399 n milwaukee ave chicago, il 60630"/>
-		<fieldset>
-			<input type="submit" value="get directions" />
-		</fieldset>
-		</form>
-	</p>
-	
-	<p>By bus: The office is on CTA bus routes #56A and #270.<br/>
-		By train: The Jefferson Park Metra station is 2 miles south of our office. Transfer to CTA bus #56A or #270.</p>
-</div>
+<a class="toggle" data-target="4">Financial Policy</a>
 
+<section id="showable-4" class="showable">
+  <p>Dr Ziols welcomes patients with and without insurance. Dentistry is affordable at Dr Ziols' office. The staff will work with you to develop a treatment plan that will satisfy your needs and fit into your budget. Dr Ziols offers a variety of payment options to ensure that your dental treatment and cosmetic procedures are affordable. We realize that people have different needs in fulfilling their financial obligations, and therefore, are providing the following payments options.</p>
 
+  <p>For your convenience, you may choose from any of the following forms of payment: Cash, Visa, Master Card, American Express, Discover, Personal Checks, Direct Debit to a personal account of your choice, and/or with third party financing through such companies as <%= link_to "CareCredit", 'http://www.carecredit.com/dentistry/whycc.html', {:target => "_new"} %>. </p>
+</section>
 
+<a class="toggle" data-target="5">Location & Parking</a>
 
+<section id="showable-5" class="showable">
+  <p>	<form class="send_email_form" action="http://maps.google.com/maps" method="get" target="_blank">
+    <fieldset>
+      <label for="starting_address">Enter your address:</label>
+      <input type="text" name="saddr" id="starting_address"/>
+    </fieldset>
+    <input type="hidden" name="daddr" value="5399 n milwaukee ave chicago, il 60630"/>
+    <fieldset>
+      <input type="submit" value="get directions" />
+    </fieldset>
+    </form>
+  </p>
 
-
-
-
-
-
-
-
-
-
+  <p>By bus: The office is on CTA bus routes #56A and #270.<br/>
+    By train: The Jefferson Park Metra station is 2 miles south of our office. Transfer to CTA bus #56A or #270.</p>
+</section>

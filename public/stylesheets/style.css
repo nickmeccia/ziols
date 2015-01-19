@@ -1,57 +1,43 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
-  font-size: 13px;
+  background-color: #fff;
+  font-size: 16px;
   font-color: #262626;
-  font-family: helvetica, arial;
-  line-height: 26px;
-  background-image: url('/images/tile.jpg');
-  width: 1000px;
-  margin: 0 auto;
+  font-family: 'raleway-light', helvetica, arial;
+  line-height: 1.4125rem;
 }
 
 /* TYPOGRAPHY
 -------------------------------------------------*/
 
-@font-face {
-  font-family: myFont;
-  src: url('/fonts/myFont.ttf');
-}
-
 h1 {
-  font-family: myFont;
-  font-size: 26px;
-  font-weight: normal;
+  font-family: 'raleway-regular', helvetica, arial;
+  font-size: 1.8125rem;
+  line-height: 2.625rem;
+  margin-bottom: 0.625rem;
 }
 
 h2 {
-  font-family: myFont;
-  font-size: 21px;
-  font-weight: normal;
+  font-family: 'raleway-light', helvetica, arial;
+  font-size: 1.3125rem;
+  line-height: 1.8125rem;
+  margin-bottom: 0.625rem;
 }
 
 h3 {
   border-bottom: 1px dashed #696969;
   color: #44c1cf;
-  font-family: myFont;
-  font-size: 19px;
-  font-weight: normal;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+  font-family: 'raleway-light', helvetica, arial;
 }
 
 h4 {
-  color: #888;
-  font-family: myFont;
-  font-size: 12px;
-  font-weight: normal;
-  margin-bottom: 5px;
-}
-
-h5 {
-  color: #44c1cf;
-  font-family: myFont;
-  font-size: 17px;
-  font-weight: normal;
-  line-height: 0px;
+  font-family: 'raleway-medium', helvetica, arial;
+  font-size: 0.825rem;
+  text-transform: uppercase;
 }
 
 a {
@@ -59,100 +45,122 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 0.625rem;
+}
+
+em {
+  font-family: 'raleway-lightitalic', helvetica, arial;
+}
+
+small {
+  font-size: 0.825rem;
+}
 
 /* LAYOUT
 -------------------------------------------------*/
 
-img {
-  border-style: none;
-  display: block;
-}
-
-img.center {
+.container {
   margin: 0 auto;
-  padding-top: 15px;
-  text-align: center;
+  padding: 1rem 0;
+  max-width: 960px;
+  width: 90%;
 }
 
-#wrap {
-  width: 1000px;
-  background: #ffffff;
+header {
+  width: 100%;
 }
 
 nav {
-  font-family: myFont;
-  font-size: 20px;
   margin: 0 auto;
-  padding-bottom: 40px;
   text-align: center;
-  width: 800px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
 }
 
 nav li {
-  display: inline;
-  padding: 5px 10px 10px 10px;
-  margin: 0px;
+  display: inline-block;
 }
 
-#container {
-  width: 800px;
-  margin: 0 auto;
+.content {
+  width: 100%;
 }
 
-#yield {
-  float: left;
-  width: 580px;
+.content .container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
 }
 
-#sidebar {
-  width: 180px;
-  float: right;
-  border-left: 1px solid #696969;
-  padding: 0 0 30px 20px;
-  line-height: 18px;
+.content .container div {
+  align-self: stretch;
+  flex: 1;
+  margin-right: 2.625rem;
+  /*width: 52rem;*/
 }
 
-#sidebar ul {
+.content .container .sidebar {
+  margin-right: 0;
+  /*width: 30rem;*/
+}
+
+.sidebar ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
-#sidebar img {
-  padding-top: 20px;
+section {
+  margin-bottom: 1.8125rem;
 }
 
 footer {
-  width: 800px;
-  display: block;
-  clear: both;
   border-top: 1px solid #696969;
-  padding-top: 0px;
-  padding-bottom: 30px;
+  width: 100%;
 }
 
-footer h4,
-footer a {
-  opacity: 0.9;
+/* LISTS
+-------------------------------------------------*/
+
+ul {
+  list-style-type: disc;
+  margin-bottom: 0.625rem;
 }
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+/* FORMS
+-------------------------------------------------*/
+
+label {
+  display: inline-block;
+  font-family: 'raleway-light', helvetica, arial;
+  font-size: 0.825rem;
+  text-transform: uppercase;
+}
+
+input[type=text],
+textarea {
+  border: 1px solid #262626;
+  border-radius: 3px;
+  display: block;
+  font-family: 'raleway-light', helvetica, arial;
+  font-size: 1rem;
+  padding: 0.5rem 0.625rem;
+}
+
+input[type=radio] {
+  display: inline-block;
+}
+
+
 
 
 /* PAGES
 -------------------------------------------------*/
 
-.links img {
-  padding-top: 25px;
-}
-
-legend {
-  padding: 5px 0 0 60px;
-}
 
 #radio {
   margin-top: -37px;
@@ -161,17 +169,12 @@ legend {
 }
 
 .toggle {
-  color: #44c1cf;
   cursor: pointer;
-  font-size: 17px;
-  font-family: myFont;
+  display: block;
+  margin-bottom: 0.625rem;
 }
 
-.showable {
-  margin-bottom: 50px;
-}
-
-form.send_email_form fieldset {
+/*form.send_email_form fieldset {
   border-style: none;
   margin-left: 60px;
 }
@@ -199,4 +202,55 @@ form.send_email_form label {
   display: inline-block;
   text-align: right;
   vertical-align: top;
+}
+*/
+/* FONT FACE
+-------------------------------------------------*/
+
+@font-face {
+  font-family: 'raleway-light';
+  src: url('/fonts/raleway-light.eot');
+  src: url('/fonts/raleway-light.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/raleway-light.woff2') format('woff2'),
+       url('/fonts/raleway-light.woff') format('woff'),
+       url('/fonts/raleway-light.ttf') format('truetype'),
+       url('/fonts/raleway-light.svg#raleway-light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway-lightitalic';
+  src: url('/fonts/raleway-lightitalic.eot');
+  src: url('/fonts/raleway-lightitalic.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/raleway-lightitalic.woff2') format('woff2'),
+       url('/fonts/raleway-lightitalic.woff') format('woff'),
+       url('/fonts/raleway-lightitalic.ttf') format('truetype'),
+       url('/fonts/raleway-lightitalic.svg#raleway-italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway-medium';
+  src: url('/fonts/raleway-medium.eot');
+  src: url('/fonts/raleway-medium.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/raleway-medium.woff2') format('woff2'),
+       url('/fonts/raleway-medium.woff') format('woff'),
+       url('/fonts/raleway-medium.ttf') format('truetype'),
+       url('/fonts/raleway-medium.svg#raleway-medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raleway-regular';
+  src: url('/fonts/raleway-regular.eot');
+  src: url('/fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/raleway-regular.woff2') format('woff2'),
+       url('/fonts/raleway-regular.woff') format('woff'),
+       url('/fonts/raleway-regular.ttf') format('truetype'),
+       url('/fonts/raleway-regular.svg#raleway-regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
