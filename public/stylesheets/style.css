@@ -78,12 +78,17 @@ small {
   width: 90%;
 }
 
+.column {
+  flex: 1;
+  width: 48%;
+}
+
 header {
   width: 100%;
 }
 
 .hero {
-  background: url("/images/headers/header-1.jpg") no-repeat center center;
+  background: url("/images/headers/header-5.jpg") no-repeat center center;
   background-size: cover;
   border: 1px solid #ccc;
   height: 30rem;
@@ -102,6 +107,17 @@ nav li {
 
 nav li:last-child {
   margin-right: 0;
+}
+
+.map-it {
+  background-image: url("/images/elements/map-it.jpg");
+  background-repeat: no-repeat;
+  background-size: 238px auto;
+  border: 1px solid #ccc;
+  display: block;
+  margin-right: 0;
+  max-width: 238px;
+  height: 238px;
 }
 
 .content {
@@ -125,7 +141,7 @@ nav li:last-child {
 }
 
 .content .container .group-photo {
-  background-image: url("/images/group-photo.jpg");
+  background-image: url("/images/elements/group-photo.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   display: block;
@@ -148,6 +164,10 @@ section, form {
 
 .sidebar section {
   margin-bottom: 1rem;
+}
+
+.mobile.sidebar {
+  display: none;
 }
 
 .toggle {
@@ -188,6 +208,10 @@ td {
 /* FORMS
 -------------------------------------------------*/
 
+fieldset {
+  margin-bottom: 1rem;
+}
+
 label {
   display: inline-block;
   font-family: 'raleway-light', helvetica, arial;
@@ -203,6 +227,7 @@ textarea {
   font-family: 'raleway-light', helvetica, arial;
   font-size: 1rem;
   padding: 0.5rem 0.625rem;
+  width:  20rem;
 }
 
 input:focus,
@@ -221,6 +246,10 @@ input[type=radio] {
 .radio label {
   font-size: 1rem;
   text-transform: none;
+}
+
+.radio-group {
+  margin-bottom: 1rem;
 }
 
 input[type=submit] {
@@ -273,6 +302,62 @@ input[type=submit]:hover {
 @media screen and (max-width: 750px) {
   .content .container .group-photo {
     height: 200px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content .container .group-photo {
+    height: 340px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .mobile.sidebar {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2.625rem;
+  }
+
+  .content .container div {
+    margin-right: 0;
+  }
+
+  input[type=text],
+  textarea {
+    width: 95%;
+  }
+
+  input[type=submit] {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content .container .group-photo {
+    height: 290px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content .container .group-photo {
+    height: 240px;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .mobile.sidebar {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content .container .group-photo {
+    height: 190px;
   }
 }
 
