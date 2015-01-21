@@ -88,10 +88,39 @@ header {
 }
 
 .hero {
-  background: url("/images/headers/header-5.jpg") no-repeat center center;
+  background: url("/images/headers/header-2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   height: 30rem;
+  position: relative;
+}
+
+.logo {
+  background-image: url("/images/logos/logo-4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 120px;
+  margin: 21rem auto 0;
+  max-width: 160px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.logo-background {
+  background-color: #44ACCF;
+  width: 190px;
+  height: 150px;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 nav {
@@ -148,6 +177,7 @@ nav li:last-child {
   margin-right: 0;
   max-width: 655px;
   height: 355px;
+  background-size: contain;
 }
 
 section, form {
